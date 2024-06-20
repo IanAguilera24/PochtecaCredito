@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitudes</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+    <img src="src/images/grupo_pochteca_logo.jpeg" alt="Logo de la empresa" class="logo"> 
+    <img src="src/images/icons/profile.png" alt="Foto de Perfil" class="profile">
+    <div class="container">
+        <div class="header">
+            <div class="portal">
+                <p>Portal de autoservicio / PORTAL DE CREDITO</p>
+            </div>
+            <div class="portalcredito">
+                <img src="src/images/icons/personal-finance.png" alt="Persona Finanza" class="portalcredito-icon">
+                <p class="portaltitulo">PORTAL DE CREDITO</p>                
+            </div>
+            <p class="portaldescrib">Portal para trámites de solicitud de crédito</p>
+        </div>
+        <div class="menu-opciones">
+            <div class="ayuda">
+                <p>¿Con qué podemos ayudarte?</p>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="item" onclick="window.location.href">
+                <img src="src/images/icons/bolt.png" alt="Foto de Perfil" class="item-icon">
+                <div class="item-text">
+                    <h2>Fastrack</h2>
+                    <p>Solicitudes hasta 100mil pesos - Respuesta máximo en 3 Días hábiles</p>
+                </div>
+            </div>
+            <div class="item" onclick="window.location.href">
+                <img src="src/images/icons/coin.png" alt="Foto de Perfil" class="item-icon">
+                <div class="item-text">
+                    <h2>Solicitud Cliente - Proveedor</h2>
+                    <p>Solicitud Cliente - proveedor - Respuesta máximo en 15 Días hábiles</p>
+                </div>
+            </div>
+            <div class="item" onclick="window.location.href='/src/html/clienteregular.html'">
+                <img src="src/images/icons/service.png" alt="Foto de Perfil" class="item-icon">
+                <div class="item-text">
+                    <h2>Confirmación de pago - Clientes Regulares</h2>
+                    <p>Solicitud de confirmación de pagos de clientes regulares</p>
+                    <p class="rojotext">Oferta de servicio</p>
+                </div>
+            </div>
+            <div class="item" onclick="window.location.href='/src/html/clienterecoge.html'">
+                <img src="src/images/icons/service.png" alt="Foto de Perfil" class="item-icon">
+                <div class="item-text">
+                    <h2>Confirmación de pago - Clientes Recoge</h2>
+                    <p>Solicitud de confirmación de pagos de clientes recoge</p>
+                    <p class="rojotext">Oferta de servicio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente regular</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'>
+    <link rel="stylesheet" href="../css/clientes.css">
+</head>
+<body>
+    <img src="../images/grupo_pochteca_logo.jpeg" alt="Logo de la empresa" class="logo"> 
+    <img src="../images/icons/profile.png" alt="Foto de Perfil" class="profile">
+    <div class="container">
+        <div class="header">
+            <h1>Cliente Recoge</h1>
+        </div>
+        
+        <div class="form-group generar">
+            <label for="nombrede">Generar esta solicitud a nombre de <span class="obligatorio">*</span></label>
+            <select id="nombrede">
+                <option value="solicitante">Nombre del usuario que solicita (colaborador@pochteca.net)</option>
+            </select>
+        </div>        
+
+        <div id="form-proveedor" class="form-container">
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="sociedad">SOCIEDAD <span class="obligatorio">*</span></label>
+                    <select id="sociedad" onchange="updateSelects()">
+                        <option value="Socied">Selecciona una sociedad</option>
+                        <option value="PochMP">Pochteca Materias Primas</option>
+                        <option value="PochPapel">Pochteca Papel</option>
+                        <option value="CLar">Conjunto Lar</option>
+                        <option value="SolAmb">Soluciones Ambientales</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+                <div class="form-group flex-item">
+                    <label for="divisionSucursal">DIVISION-SUCURSAL<span class="obligatorio">*</span></label>
+                    <select id="divisionSucursal"></select>
+                </div>
+            </div>    
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="numero-cliente">NUMERO DEL CLIENTE <span class="obligatorio">*</span></label>
+                    <input type="text" id="numero-cliente">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="nombre-cliente">NOMBRE DEL CLIENTE <span class="obligatorio">*</span></label>
+                    <input type="text" id="nombre-cliente">
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="banconuestro">BANCO-CUENTA-MONEDA-DONDE SE RECIBIO EL PAGO (NUESTRO)<span class="obligatorio">*</span></label>
+                    <select id="banconuestro"></select>
+                </div>
+                <div class="form-group flex-item">
+                    <label for="bancosuyo">BANCO DONDE SE EMITIO EL PAGO (SUYO)</label>
+                    <select id="bancosuyo">
+                        <option value="guiadeusuario">Guia de usuario para carga de facturas en coupa</option>
+                        <option value="pagoscomprobante">Pagos y comprobantes</option>
+                        <option value="solicitudfecha">Solicitud de fecha de pago</option>
+                        <option value="aclaracionfact">Aclaración de facturas</option>
+                        <option value="quejasugerencia">Queja o sugerencia</option>
+                    </select>
+                </div>
+            </div>  
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="fecha-deposito">FECHA DEL DEPOSITO <span class="obligatorio">*</span>:</label>
+                    <input type="date" id="fecha-deposito">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="importe">IMPORTE <span class="obligatorio">*</span></label>
+                    <input type="number" id="importe">
+                </div>
+            </div>   
+            <div class="flex-container">
+                <div class="form-group flex-item">
+                    <label for="referencia">REFERENCIA </label>
+                    <input type="text" id="referencia">
+                </div>
+                <div class="form-group flex-item">
+                    <label for="adjuntar-archivo">ADJUNTAR ARCHIVO</label>
+                    <input type="file" id="adjuntar-archivo">
+                </div>
+            </div>   
+            <div class="form-group">
+                <label for="comentarios-proveedor">COMENTARIOS</label>
+                <textarea id="comentarios-proveedor"></textarea>
+            </div>
+            <div class="submit-button">
+                <button type="submit">SUBIR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/clientes.js"></script>
+</body>
+</html>
